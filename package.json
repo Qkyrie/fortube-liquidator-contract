@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx hardhat",
-    "test": "npx hardhat test --network hardhat"
+    "build": "npx hardhat compile",
+    "test": "npx hardhat test --network hardhat",
+    "deploy": "npx hardhat run script/deploy.js --network main"
   },
   "author": "",
   "license": "ISC",
@@ -16,10 +17,6 @@
     "@openzeppelin/contracts": "^3.3.0",
     "@openzeppelin/test-environment": "^0.1.9",
     "@openzeppelin/test-helpers": "^0.5.10",
-    "@studydefi/money-legos": "^2.4.1",
-    "@uniswap/lib": "^4.0.1-alpha",
-    "@uniswap/sdk": "^3.0.3",
-    "@uniswap/v2-periphery": "^1.1.0-beta.0",
     "chai": "^4.2.0",
     "ethereum-waffle": "2.5.0",
     "ganache-core": "^2.13.2",
